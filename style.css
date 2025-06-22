@@ -1,0 +1,104 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.8;
+  background-color: #fff8f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #ff6f3c, #ff9f68);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+header .catchcopy {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* Section */
+section {
+  background-color: #ffffff;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ff6f3c;
+}
+
+section p,
+section ul {
+  font-size: 1rem;
+}
+
+section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Company Section */
+.company-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.company-text {
+  flex: 1;
+}
+
+.company-text ul li {
+  margin-bottom: 8px;
+}
+
+.company-img {
+  flex: 0 0 200px;
+  text-align: center;
+}
+
+.company-img img {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Message Section */
+.message p {
+  margin-bottom: 16px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff6f3c;
+  color: white;
+  margin-top: 60px;
+}
