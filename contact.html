@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ | Engineer Community</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #fff8f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff6f3c, #ff9f68);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: #ff6f3c;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 1rem;
+      background-color: #ff6f3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff884d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff6f3c;
+      color: white;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>お問い合わせ</h1>
+    <p class="catchcopy">お気軽にご連絡ください</p>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>お問い合わせフォーム</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="お名前" required>
+
+        <label for="kana">ふりがな</label>
+        <input type="text" id="kana" name="ふりがな" required>
+
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="お問い合わせ内容" rows="5" required></textarea>
+
+        <button type="submit">送信する</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Engineer Community. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
