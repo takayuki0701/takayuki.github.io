@@ -7,9 +7,9 @@
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  line-height: 1.8;
   background-color: #fff8f4;
   color: #333;
+  line-height: 1.8;
 }
 
 .container {
@@ -29,7 +29,7 @@ header {
 
 header h1 {
   font-size: 2.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 header .catchcopy {
@@ -37,12 +37,12 @@ header .catchcopy {
   font-weight: 300;
 }
 
-/* Section */
+/* Sections */
 section {
-  background-color: #ffffff;
+  background: #fff;
   margin-top: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   padding: 30px;
 }
 
@@ -53,8 +53,10 @@ section h2 {
 }
 
 section p,
-section ul {
+section ul,
+section ul li {
   font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 section ul {
@@ -62,43 +64,28 @@ section ul {
   padding-left: 20px;
 }
 
-/* Company Section */
-.company-info {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 30px;
+/* Event images */
+.event-img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  margin: 10px 0;
+  display: block;
 }
 
-.company-text {
-  flex: 1;
-}
-
-.company-text ul li {
-  margin-bottom: 8px;
-}
-
-.company-img {
-  flex: 0 0 200px;
-  text-align: center;
-}
-
+/* Company image */
 .company-img img {
   width: 200px;
   border-radius: 12px;
+  margin-top: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Message Section */
-.message p {
-  margin-bottom: 16px;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #ff6f3c;
+  background: #ff6f3c;
   color: white;
+  padding: 20px;
   margin-top: 60px;
 }
